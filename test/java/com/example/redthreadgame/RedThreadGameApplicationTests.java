@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 
-@SpringBootTest
-@TestPropertySource(properties = {
+@SpringBootTest // يشغل التست
+@TestPropertySource(properties = {    // ابدل القيم الحقيقية بقيم وهميه وقت التست  
         "OPEN_AI_KEY=test",
         "ELEVEN_LABS_KEY=test",
         "TWILIO_ACCOUNT_SID=test",
